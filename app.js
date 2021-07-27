@@ -18,9 +18,7 @@ function opening() {
 function closing() {
     
     if(input.value !== ""){
-        window.open(`https://www.google.com/search?q=${input.value}`);
-        input.className= "Search-open";
-        input.value = "";
+        window.open(`https://www.google.com/search?q=${input.value}`, "_blank");
     }else{
         input.className = "Search";
     }
