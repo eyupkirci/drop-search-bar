@@ -19,7 +19,9 @@ function closing() {
     
     if(input.value !== ""){
         window.open(`https://www.google.com/search?q=${input.value}`, "_blank");
-    }else{
+        // input.className = "Search-open";
+        input.value = "";
+g    }else{
         input.className = "Search";
     }
 }
